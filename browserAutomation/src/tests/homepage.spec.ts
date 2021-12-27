@@ -1,7 +1,7 @@
 import { test, expect} from '@playwright/test';
 
 test('Confirm text on homepage', async ({ page }) => {
-    await page.goto('https://daniel-wh.github.io/react-template')
+    await page.goto('https://daniel-wh.github.io/react-template/')
 
     await expect(page.locator(".App-link")).toHaveText("Learn React", {useInnerText: true})
 })

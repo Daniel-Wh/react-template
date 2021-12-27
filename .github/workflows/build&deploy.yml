@@ -54,16 +54,16 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
-          
+
   test:
     name: Test
-    needs: build
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
       - name: install playwright
         run: npm ci
         working-directory: browserAutomation
       - name: run test against current deployment
         run: npm run test
         working-directory: browserAutomation
-    
