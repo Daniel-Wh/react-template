@@ -1,0 +1,14 @@
+{
+  "name": "browserautomation",
+  "version": "1.0.0",
+  "description": "browser automation with playwright",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test --config=src/playwright.config.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.17.1"
+  }
+}
