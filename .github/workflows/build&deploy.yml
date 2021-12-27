@@ -61,9 +61,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: install playwright
-      - run: npm ci
+        run: npm ci
         working-directory: browserAutomation
       - name: run test against current deployment
-      - run: npm run test
+        run: npm run test
         working-directory: browserAutomation
     
