@@ -57,6 +57,7 @@ jobs:
 
   test:
     name: Test
+    needs: deploy
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
